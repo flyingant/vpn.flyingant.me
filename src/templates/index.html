@@ -26,45 +26,90 @@
   <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-  <div class="w-screen h-screen">
-    <div class="h-20 container mx-auto mb-4 flex justify-center items-center shadow shadow-l">
-      <img class="w-4" alt="left heart" src="./assets/heart.png">
-      <h4 class="mx-4">MaYi Studio</h4>
-      <img class="w-4" alt="left heart" src="./assets/heart.png">
+  <div class="w-screen h-screen flex flex-col justify-between">
+    <div class="container relative sm:w-4/5 w-full mx-auto flex items-center justify-center text-white py-8" style="background: linear-gradient(143.24deg, #8ED7D7 -24.06%, rgba(255, 255, 255, 0) 33.83%), #2ABC85;">
+      <div class="w-2/3 mx-auto flex flex-col" style="color: #F3EFED">
+        <h1 class="text-3xl py-4">MaYi 的 VPN</h1>
+        <div>
+          <ul class="text-base">
+            <li class="p-1">合法翻墙 / 稳定 / 速度快</li>
+            <li class="p-1">包年无限流量 / 最多同时支持5台设备连接</li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="container mx-auto flex flex-col">
-      <h1 class="font-bold mb-4">MaYi 的 VPN 分享计划</h1>
-      <p>************以下是个稍微有点正经的介绍说明************</p>
-      <hr class="w-full h-1 my-2">
-      <p class="mb-2">前几天帮助一些好友弄了个用着还可以的VPN，发现既然有着需求，不如费了一番力气帮助有需求的朋友们顺便也盘了一盘，所以去找VPN 的供应商讨价还价要了一批VPN 账号，然后就这样开张了!</p>
-      <h4>这个VPN简单说重要的好几点：</h4>
-      <ul class="list-disc pl-6">
-        <li>是通过合法的软件和一个还算正经的账号实施的</li>
-        <li>的供应商走过了至少五年的风风雨雨，所以基本还算稳定。<small>（2015年起，我一直在用）</small></li>
-        <li>当且仅满足那种需求是那种日常查查邮件看看视频图片或者上上外网看看新闻。<small>（毕竟，是吧...）</small></li>
-        <li><small>(为了避免太复杂和不人性化的操作)</small>目前就只考虑&nbsp;<i>下载一个正经的软件 Anyconnect 然后输入一个账号</i>&nbsp;这样的方式完成连接VPN的全部过程。<small>（虽然也支持类似于 <i>SSH，L2TP/SSTP, IKEv1/v2 等等</i>，但是实在懒得教）</small></li>
-      </ul>
-      <h4>优点</h4>
-      <ul class="list-disc pl-6">
-        <li>包年的</li>
-        <li>流量无限</li>
-        <li>账号能支持好几个设备同时用</li>
-        <li>iOS, Android, Mac, Windows 都能用<small>（毕竟用的是正经公司的软件）</small></li>
-        <li>还算便宜，账号跟别人Share 的话 60元/年，独自享用的话，180元/年。</li>
-        <li>如果想要更快一点的话，账号跟别人Share 的话 120元/年，独自享用的话，360元/年。</li>
-        <li>MaYi Baba 全程提供爱心技术支持<img class="w-4 inline-block" alt="heart" src="./assets/heart.png"></li>
-        <li>貌似还没有用过的人说不好用的</li>
-        <li>假如遇到天灾的话，全部退款吧！</li>
-        <li>实在手头紧的话，就送你一个</li>
-      </ul>
-      <h4>缺点</h4>
-      <ul class="list-disc pl-6">
-        <li>跟所有其他VPN 一样，会随着国家网络出口流量的变化速度会时好时坏</li>
-        <li>不支持很多很多设备同时使用</li>
-        <li>不允许BT下载</li>
-        <li>没有25小时客服</li>
-      </ul>
-      <p class="mb-2">所以有需求的小伙伴可以直接微信联系我或者拨打这个空号<a class="text-blue-500 underline mx-2 hover:text-red-300" href="tel:123456789">123456789</a>投诉，或者发邮件到这里咨询<a class="text-blue-500 underline mx-2 hover:text-red-300" href="mailto:liucheng@flyingant.me">liucheng@flyingant.me</a><small>(有空保证会回！)</small></p>
+    <div class="container sm:w-4/5 w-full h-full mx-auto flex sm:flex-row flex-col px-0 sm:px-16 py-8" style="background-color: #F3EFED;">
+      <div class="sm:w-1/2 w-full overflow-hidden px-4">
+        <h2 class="text-lg py-4" style="color: #6E7A99;">配置方法</h2>
+        <ul class="text-base" style="color: #0D102C;">
+          <li class="p-1"><b>第 1 步</b> 下载对应平台的 Cisco Anyconnect 并安装。
+            <span>
+              <ul class="text-base">
+                <li class="inline-block mr-2"><a class="underline" href="#" target="_blank">iOS</a></li>
+                <li class="inline-block mr-2"><a class="underline" href="#" target="_blank">Android</a></li>
+                <li class="inline-block mr-2"><a class="underline" href="#" target="_blank">Mac</a></li>
+                <li class="inline-block mr-2"><a class="underline" href="#" target="_blank">Windows</a></li>
+              </ul>
+            </span>
+          </li>
+          <li class="p-1"><b>第 2 步</b> 找 MaYi 要帐号</li>
+          <li class="p-1"><b>第 3 步</b> 配置一下 </li>
+          <li class="p-1"><b>第 4 步</b> 连接上网！Enjoy!</li>
+        </ul>
+      </div>
+      <div class="sm:w-1/2 w-full overflow-hidden px-4">
+        <h2 class="text-lg py-4" style="color: #6E7A99;">帐号种类</h2>
+        <div class="w-full flex text-base">
+          <div class="w-1/2 mr-1 flex flex-col cursor-pointer" style="background: linear-gradient(143.24deg, #8ED7D7 -24.06%, rgba(255, 255, 255, 0) 33.83%), #2ABC85;box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.16);border-radius: 4px;">
+            <div class="w-full flex justify-end py-2">
+              <b class="w-16 bg-gray-600 text-white text-sm text-center opacity-50">共享版</b>
+            </div>
+            <div class="w-full flex items-end justify-start text-sm text-white px-8 py-2">
+              <b class="text-3xl mr-2">60</b><span class="py-2">RMB/年</span>
+            </div>
+            <div class="w-full flex flex-col items-startjustify-start px-8 pb-4" style="color:#083727;">
+              <div class="text-base">普通账号</div>
+              <div class="text-sm">日常所需（邮件/视频/图片/新闻咨询）</div>
+              <div class="text-sm">独享版：<br/>180 RMB/年</div>
+            </div>
+          </div>
+          <div class="w-1/2 flex flex-col cursor-pointer" style="background: linear-gradient(143.24deg, #8ED7D7 -24.06%, rgba(255, 255, 255, 0) 33.83%), #3979DB;box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.16);border-radius: 4px;">
+            <div class="w-full flex justify-end py-2">
+              <b class="w-16 bg-gray-600 text-white text-sm text-center opacity-50">共享版</b>
+            </div>
+            <div class="w-full flex items-end justify-start text-sm text-white px-8 py-2">
+              <b class="text-3xl mr-2">120</b><span class="py-2">RMB/年</span>
+            </div>
+            <div class="w-full flex flex-col items-startjustify-start px-8 pb-4" style="color:#083727;">
+              <div class="text-base">速度更快账号</div>
+              <div class="text-sm">日常所需（邮件/视频/图片/新闻咨询）</div>
+              <div class="text-sm">独享版：<br/>360 RMB/年</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="container sm:w-4/5 w-full mx-auto flex" >
+        <div class="w-full px-16 py-8" style="background-color: rgb(32, 37, 65)">
+          <h2 class="text-lg py-4" style="color: #F3EFED; opacity: 0.6;">注意事项</h2>
+          <ul class="text-base list-decimal" style="color: rgb(110, 112, 152)">
+            <li class="p-1">帐号支持很多其他的VPN 连接方式，但暂时仅提供Anyconnect 的这种简单并且稳定的VPN连接方式。</li>
+            <li class="p-1">同所有其他VPN一样会随着国家网络出口流量的变化速度会时好时坏。</li>
+            <li class="p-1">供应商稳定运行至少五年了。<small>（跑路风险低）</small></li>
+            <li class="p-1">不支持无限个设备同时使用</li>
+            <li class="p-1">不允许BT下载</li>
+            <li class="p-1">没有25小时客服</li>
+            <li class="p-1">不满意就退款</li>
+            <li class="p-1">全程爱心技术支持<small>(MaYi Baba 提供)</small></li>
+            <li class="p-1">有其他问题可通过微信咨询联系</li>
+            <li class="p-1">或者拨打这个空号<a class="text-blue-500 underline mx-2 hover:text-red-300" href="tel:123456789">123456789</a>投诉，或者发邮件到这里咨询<a class="text-blue-500 underline mx-2 hover:text-red-300" href="mailto:liucheng@flyingant.me">liucheng@flyingant.me</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container sm:w-4/5 w-full mx-auto h-16 flex items-center justify-center text-sm" style="background-color: #0D102C; color: #6E7A99;">
+        Build with love by MaYi Studio <img class="w-4 ml-2" alt="left heart" src="./assets/heart.png">
+      </div>
     </div>
   </div>
 </body>
